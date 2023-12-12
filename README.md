@@ -1,4 +1,4 @@
-# Bilal-WebPortfolio
+# Bilal-WebPortfolio-1.0
 
 My personal web portfolio serves as a showcase of my experience, personal projects, and career journey. This is my inaugural project that I am sharing with the world, hoping to inspire fellow developers.
 
