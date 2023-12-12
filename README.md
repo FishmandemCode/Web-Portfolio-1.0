@@ -5,16 +5,24 @@ My personal web portfolio serves as a showcase of my experience, personal projec
 Key Skills Utilized:
 
 Vite: Optimized project build and development workflow for faster performance.
+
 React: Designed interactive user interfaces and components for an engaging experience.
+
 Styled-Components: Applied dynamic and maintainable styles to enhance visual aesthetics.
+
 Framer-Motion: Infused life into the UI with seamless animations and transitions.
+
 HTML, CSS & JavaScript: Crafted an intuitive and user-friendly web GUI.
+
 Figma: Utilized for design purposes.
+
 
 Technology Stack:
 
 Language: JavaScript
+
 Web Development: React, HTML, CSS
+
 Web Server: Vite
 
 Website Images:
