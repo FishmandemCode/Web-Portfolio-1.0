@@ -10,6 +10,7 @@ const Section = styled.div`
   margin: 0;
   padding: 0;
   display: flex;
+  overflow: hidden;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
@@ -23,6 +24,9 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  @media (min-aspect-ratio: 2/1) {
+    height: 65vh;
+  }
   @media screen and (max-width: 1400px) {
     margin-top: 7vh;
     width: 92vw;
@@ -68,6 +72,10 @@ const Footer = styled(motion.div)`
   font-family: "Neue-Montreal-light";
   gap: 2vw;
 
+  @media (min-aspect-ratio: 2/1) {
+    width: 92vw;
+  }
+
   @media (min-width: 0px) and (max-width: 1400px) {
     justify-content: center;
     align-items: center;
@@ -88,6 +96,12 @@ const Link = styled(motion.a)`
 
   &:hover {
     color: #4472C4; /* Add the hover color */
+  }
+  @media (min-aspect-ratio: 2/1) {
+    height: 1.8vw;
+    font-size: 1.8vw;
+    padding-top: 2vw;
+    padding-bottom: 5vw;
   }
   @media (min-width: 0px) and (max-width: 1400px) {
     height: 3.5vw;
@@ -134,15 +148,22 @@ const Col = styled(motion.div)`
   justify-content: flex-start;
   gap: 0.5vw;
   flex-wrap: nowrap;
+  @media (min-aspect-ratio: 2/1) {
+    margin-top: 1vw;
+  }
+
 `;
 const Item1Container = styled(motion.div)`
   width: 100%;
   height: 14vw;
+  @media (min-aspect-ratio: 2/1) {
+    height: 10vw;
+  }
 `;
 const Item1 = styled(motion.div)`
   &.card{
     background: rgba(116, 115, 115, 0.2);
-    border-radius: 5px;
+    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10.1px);
     -webkit-backdrop-filter: blur(10.1px);
@@ -151,6 +172,9 @@ const Item1 = styled(motion.div)`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (min-aspect-ratio: 2/1) {
+    height: 10vw;
+    }
   }
 
   &.opened-card{
@@ -167,12 +191,15 @@ const Item1 = styled(motion.div)`
 const Item2Container = styled(motion.div)`
   height: 14vw;
   width: 100%;
+  @media (min-aspect-ratio: 2/1) {
+    height: 10vw;
+  }
 `;
 const Item2 = styled(motion.div)`
   &.card{
     z-index: 1;
     background: rgba(116, 115, 115, 0.2);
-    border-radius: 5px;
+    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10.1px);
     -webkit-backdrop-filter: blur(10.1px);
@@ -181,6 +208,9 @@ const Item2 = styled(motion.div)`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (min-aspect-ratio: 2/1) {
+    height: 10vw;
+  }
   }
   &.opened-card{
     z-index: 10;
@@ -197,12 +227,15 @@ const Item2 = styled(motion.div)`
 const Item3Container = styled(motion.div)`
   width: 100%;
   height: 14vw;
+  @media (min-aspect-ratio: 2/1) {
+    height: 10vw;
+  }
 `;
 const Item3 = styled(motion.div)`
   &.card{
     z-index: 1;
     background: rgba(116, 115, 115, 0.2);
-    border-radius: 5px;
+    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10.1px);
     -webkit-backdrop-filter: blur(10.1px);
@@ -211,6 +244,9 @@ const Item3 = styled(motion.div)`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (min-aspect-ratio: 2/1) {
+    height: 10vw;
+  }
   }
 
   &.opened-card{
@@ -230,11 +266,14 @@ const Item3 = styled(motion.div)`
 const Item4Container = styled(motion.div)`
     height: 14vw;
     width: 100%;
+    @media (min-aspect-ratio: 2/1) {
+    height: 10vw;
+  }
 `;
 const Item4 = styled(motion.div)`
   &.card{
     background: rgba(116, 115, 115, 0.2);
-    border-radius: 5px;
+    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10.1px);
     -webkit-backdrop-filter: blur(10.1px);
@@ -243,6 +282,9 @@ const Item4 = styled(motion.div)`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (min-aspect-ratio: 2/1) {
+    height: 10vw;
+  }
   }
   &.opened-card{
     background: rgba(116, 115, 115, 0.2);
@@ -274,6 +316,10 @@ const ItemContent = styled(motion.div)`
   height: 90%;
 `;
 const Left = styled(motion.div)`
+  height: 90%;
+  @media (min-aspect-ratio: 2/1) {
+    height: 88%;
+    }
   div{
     margin-top: -1vw;
   }
@@ -291,8 +337,11 @@ const Left = styled(motion.div)`
   ul{
     list-style: none;
   }
-  p{
+  li{
     font-size: 0.8vw;
+  }
+  p{
+    font-size: 0.9vw;
   }
 
   h2{
@@ -489,10 +538,8 @@ const Items = styled(motion.div)`
 `;
 const MGit = styled(motion.div)`
   width: 95%;
-  height: 7%;
-  padding-top: 2vw;
   &.Web{
-    padding-top: 3vw;
+    padding-top: 2vw;
   }
   @media screen and (max-width: 1400px) and (orientation: landscape) {
     font-size: 2.7vw;
@@ -616,7 +663,7 @@ const Projects = () => {
                   viewport={{ once: true }}
                   transition={{ type: "spring", stiffness: 40, delay: 1 }}
                 >
-                  <a href="google.com" target="_blank">
+                  <a href="https://github.com/FishmandemCode/Web-Portfolio-1.0" target="_blank">
                     Github
                   </a>
                 </MGit>
@@ -688,7 +735,7 @@ const Projects = () => {
                   viewport={{ once: true }}
                   transition={{ type: "spring", stiffness: 40, delay: 1 }}
                 >
-                  <a href="google.com" target="_blank">
+                  <a href="https://github.com/FishmandemCode/FBCS" target="_blank">
                     Github
                   </a>
                 </MGit>
@@ -757,7 +804,7 @@ const Projects = () => {
                   viewport={{ once: true }}
                   transition={{ type: "spring", stiffness: 40, delay: 1 }}
                 >
-                  <a href="google.com" target="_blank">
+                  <a href="https://github.com/FishmandemCode/Covid-Screening-Application" target="_blank">
                     Github
                   </a>
                 </MGit>
@@ -826,7 +873,7 @@ const Projects = () => {
                   viewport={{ once: true }}
                   transition={{ type: "spring", stiffness: 40, delay: 1 }}
                 >
-                  <a href="google.com" target="_blank">
+                  <a href="https://github.com/FishmandemCode/Calculator-Project-CALBN-" target="_blank">
                     Github
                   </a>
                 </MGit>
@@ -855,8 +902,8 @@ const Projects = () => {
                 viewport={{ once: true }}
                 animate={{
                   width: selectedCard === "Item1" ? "70vw" : "",
-                  height: selectedCard === "Item1" ? "65vh" : "",
-                  marginTop: selectedCard === "Item1" ? "-1vw" : "0",
+                  height: selectedCard === "Item1" ? "70vh" : "",
+                  marginTop: selectedCard === "Item1" ? "-11.3vh" : "0",
                   marginLeft: selectedCard === "Item1" ? "-10.6vw" : "0",
                 }}
                 transition={{ duration: 0.3, type: "linear" }}
@@ -989,7 +1036,8 @@ const Projects = () => {
                           viewport={{ once: true }}
                           transition={{ type: "spring", stiffness: 40, delay: 1 }}
                         >
-                          <a href="google.com" target="_blank">
+                          <a href="https://github.com/FishmandemCode/Web-Portfolio-1.0" target="_blank">
+
                             Github
                           </a>
                         </MGit>
@@ -1031,9 +1079,9 @@ const Projects = () => {
                 viewport={{ once: true }}
                 animate={{
                   width: selectedCard === "Item2" ? "70vw" : "",
-                  height: selectedCard === "Item2" ? "65vh" : "",
-                  marginTop: selectedCard === "Item2" ? "-15.6vw" : "0",
-                  marginLeft: selectedCard === "Item2" ? "-10.6vw" : "0",
+                  height: selectedCard === "Item2" ? "70vh" : "",
+                  marginTop: selectedCard === "Item2" ? "-40vh" : "0",
+                  marginLeft: selectedCard === "Item2" ? "-44%" : "0",
                 }}
                 transition={{ duration: 0.3, type: "linear" }}
                 onMouseEnter={textEnter}
@@ -1058,7 +1106,7 @@ const Projects = () => {
                           visible: { opacity: 1 },
                         }}
                         initial="hidden"
-                        whileInView="visible"
+                        animate="visible"
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 40, delay: 0.2 }}
                         >
@@ -1081,7 +1129,7 @@ const Projects = () => {
                           visible: { opacity: 1 },
                         }}
                         initial="hidden"
-                        whileInView="visible"
+                        animate="visible"
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 40, delay: 0.4 }}
                         >Key Skills Utilized:</motion.h2>
@@ -1091,7 +1139,7 @@ const Projects = () => {
                           visible: { opacity: 1 },
                         }}
                         initial="hidden"
-                        whileInView="visible"
+                        animate="visible"
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 40, delay: 0.6 }}
                         >
@@ -1135,7 +1183,7 @@ const Projects = () => {
                           visible: { opacity: 1 },
                         }}
                         initial="hidden"
-                        whileInView="visible"
+                        animate="visible"
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 40, delay: 0.8 }}
                         >
@@ -1146,7 +1194,7 @@ const Projects = () => {
                           visible: { opacity: 1 },
                         }}
                         initial="hidden"
-                        whileInView="visible"
+                        animate="visible"
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 40, delay: 1 }}
                         >
@@ -1183,7 +1231,7 @@ const Projects = () => {
                           visible: { opacity: 1 },
                         }}
                         initial="hidden"
-                        whileInView="visible"
+                        animate="visible"
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 40, delay: 0.8 }}
                         >Technology Stack:</motion.h2>
@@ -1193,7 +1241,7 @@ const Projects = () => {
                           visible: { opacity: 1 },
                         }}
                         initial="hidden"
-                        whileInView="visible"
+                        animate="visible"
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 40, delay: 1 }}
                         >
@@ -1223,11 +1271,11 @@ const Projects = () => {
                             visible: { opacity: 1 },
                           }}
                           initial="hidden"
-                          whileInView="visible"
+                          animate="visible"
                           viewport={{ once: true }}
                           transition={{ type: "spring", stiffness: 40, delay: 1 }}
                         >
-                          <a href="google.com" target="_blank">
+                        <a href="https://github.com/FishmandemCode/FBCS" target="_blank">
                             Github
                           </a>
                         </MGit>
@@ -1239,7 +1287,7 @@ const Projects = () => {
                           visible: { opacity: 1 },
                         }}
                         initial="hidden"
-                        whileInView="visible"
+                        animate="visible"
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 40, delay: 0.2 }}
                          src="./img/Projects/FBCS.png" />
@@ -1249,7 +1297,7 @@ const Projects = () => {
                           visible: { opacity: 1 },
                         }}
                         initial="hidden"
-                        whileInView="visible"
+                        animate="visible"
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 40, delay: 0.4 }}
                          src="./img/Projects/FBCS1.png" />
@@ -1279,9 +1327,9 @@ const Projects = () => {
                 viewport={{ once: true }}
                 animate={{
                   width: selectedCard === "Item3" ? "70vw" : "",
-                  height: selectedCard === "Item3" ? "65vh" : "",
-                  marginTop: selectedCard === "Item3" ? "-1vw" : "0",
-                  marginLeft: selectedCard === "Item3" ? "-35.2vw" : "0",
+                  height: selectedCard === "Item3" ? "70vh" : "",
+                  marginTop: selectedCard === "Item3" ? "-11.3vh" : "0",
+                  marginLeft: selectedCard === "Item3" ? "-146%" : "0",
                 }}
                 transition={{ duration: 0.3, type: "linear" }}
                 onMouseEnter={textEnter}
@@ -1419,7 +1467,7 @@ const Projects = () => {
                           viewport={{ once: true }}
                           transition={{ type: "spring", stiffness: 40, delay: 1.6 }}
                         >
-                          <a href="google.com" target="_blank">
+                          <a href="https://github.com/FishmandemCode/Covid-Screening-Application" target="_blank">
                             Github
                           </a>
                         </MGit>
@@ -1473,9 +1521,9 @@ const Projects = () => {
                 viewport={{ once: true }}
                 animate={{
                   width: selectedCard === "Item4" ? "70vw" : "",
-                  height: selectedCard === "Item4" ? "65vh" : "",
-                  marginTop: selectedCard === "Item4" ? "-15.6vw" : "0",
-                  marginLeft: selectedCard === "Item4" ? "-35.2vw" : "0",
+                  height: selectedCard === "Item4" ? "70vh" : "",
+                  marginTop: selectedCard === "Item4" ? "-40vh" : "0",
+                  marginLeft: selectedCard === "Item4" ? "-146%" : "0",
                 }}
                 transition={{ duration: 0.3, type: "linear" }}
                 onMouseEnter={textEnter}
@@ -1624,7 +1672,7 @@ const Projects = () => {
                           viewport={{ once: true }}
                           transition={{ type: "spring", stiffness: 40, delay: 2 }}
                         >
-                          <a href="google.com" target="_blank">
+                          <a href="https://github.com/FishmandemCode/Calculator-Project-CALBN-" target="_blank">
                             Github
                           </a>
                         </MGit>
@@ -1660,7 +1708,7 @@ const Projects = () => {
           whileInView="visible"
           viewport={{ once: true }}
           transition={{ type: "spring", stiffness: 60, delay: 0.2 }}
-          href="https://github.com/FishmandemCode"
+          href="https://resume.io/r/sZ2Qrdb8h"
           target="_blank"
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}

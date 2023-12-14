@@ -5,6 +5,9 @@ import MouseCursor from "../MouseCursor";
 import React, { useState, useRef } from "react";
 
 const Section = styled.nav`
+  *{
+    cursor: none !important;
+  }
   font-family: "Neue-Montreal-light";
   height: 10vh;
   width: 100vw;
@@ -89,8 +92,8 @@ const IMG = styled.img`
 const BG = styled(motion.div)`
     position: fixed;
     top: 0;
-    right: 0;
-    bottom: 0px;
+    left: 100;
+    bottom: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
@@ -198,7 +201,9 @@ const MobileIMG = styled.img`
     width: 15vw;
   }
 `;
+
 function Navbar() {
+  
   const Navlinks = {
     open: {
       transition: {
@@ -245,6 +250,7 @@ function Navbar() {
 
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
+  const [Lightmode, setLightmode] = useState(false);
 
   const [CursorState, setCursorState] = useState("visible");
 
@@ -356,13 +362,14 @@ function Navbar() {
       </Mobile_Nav>
       <NavContainer className="LargeScreen">
         <Logo
-          initial={{ opacity: 0, x: 55 }}
-          animate={{ opacity: 1, x: 0 }}
           transition={{ type: "spring", stiffness: 60, delay: 0.2 }}
           as={NavLink}
           to="/"
         >
           <IMG
+            initial={{ opacity: 0, x: 55 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", stiffness: 60, delay: 0.2 }}
             src="./img/LogoW.png"
             onMouseEnter={textEnter}
             onMouseLeave={textLeave}

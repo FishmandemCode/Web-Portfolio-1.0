@@ -24,7 +24,7 @@ function Icon({ isTextHovered }) {
         variants={animationVariants}
         width="268"
         height="49"
-        fill="#D9D9D9"
+        fill="#ffffff"
         fillOpacity="0.1"
         rx="24.5"
       ></motion.rect>
@@ -40,7 +40,7 @@ function Icon({ isTextHovered }) {
         width="290.722"
         height="237.593"
         y="131"
-        fill="#D9D9D9"
+        fill="#ffffff"
         fillOpacity="0.1"
         rx="71"
       ></motion.rect>
@@ -52,7 +52,7 @@ function Icon({ isTextHovered }) {
         height="319.25"
         x="311.05"
         y="131"
-        fill="#D9D9D9"
+        fill="#ffffff"
         fillOpacity="0.1"
         rx="71"
       ></motion.rect>
@@ -63,7 +63,7 @@ function Icon({ isTextHovered }) {
         width="137.891"
         height="247.26"
         y="387.927"
-        fill="#D9D9D9"
+        fill="#ffffff"
         fillOpacity="0.1"
         rx="68.945"
       ></motion.rect>
@@ -75,7 +75,7 @@ function Icon({ isTextHovered }) {
         height="247.26"
         x="155.525"
         y="387.927"
-        fill="#D9D9D9"
+        fill="#ffffff"
         fillOpacity="0.1"
         rx="68.945"
       ></motion.rect>
@@ -87,7 +87,7 @@ function Icon({ isTextHovered }) {
         height="344.18"
         x="311.051"
         y="468.819"
-        fill="#D9D9D9"
+        fill="#ffffff"
         fillOpacity="0.1"
         rx="71"
       ></motion.rect>
@@ -99,7 +99,7 @@ function Icon({ isTextHovered }) {
         height="319.25"
         x="748.235"
         y="131"
-        fill="#D9D9D9"
+        fill="#ffffff"
         fillOpacity="0.1"
         rx="71"
       ></motion.rect>
@@ -111,7 +111,7 @@ function Icon({ isTextHovered }) {
         height="200.453"
         x="1072.02"
         y="131"
-        fill="#D9D9D9"
+        fill="#ffffff"
         fillOpacity="0.1"
         rx="71"
       ></motion.rect>
@@ -123,7 +123,7 @@ function Icon({ isTextHovered }) {
         height="200.453"
         x="1072.02"
         y="350.023"
-        fill="#D9D9D9"
+        fill="#ffffff"
         fillOpacity="0.1"
         rx="71"
       ></motion.rect>
@@ -135,7 +135,7 @@ function Icon({ isTextHovered }) {
         height="200.453"
         x="1443.81"
         y="350.023"
-        fill="#D9D9D9"
+        fill="#ffffff"
         fillOpacity="0.1"
         rx="71"
       ></motion.rect>
@@ -147,7 +147,7 @@ function Icon({ isTextHovered }) {
         height="200.453"
         x="1308.86"
         y="131"
-        fill="#D9D9D9"
+        fill="#ffffff"
         fillOpacity="0.1"
         rx="71"
       ></motion.rect>
@@ -159,7 +159,7 @@ function Icon({ isTextHovered }) {
         height="243.953"
         x="1072.02"
         y="569.047"
-        fill="#D9D9D9"
+        fill="#ffffff"
         fillOpacity="0.1"
         rx="71"
       ></motion.rect>
@@ -171,7 +171,7 @@ function Icon({ isTextHovered }) {
         height="344.18"
         x="634.837"
         y="468.819"
-        fill="#D9D9D9"
+        fill="#ffffff"
         fillOpacity="0.1"
         rx="71"
       ></motion.rect>
@@ -182,7 +182,7 @@ function Icon({ isTextHovered }) {
         width="290.722"
         height="158.48"
         y="654.52"
-        fill="#D9D9D9"
+        fill="#ffffff"
         fillOpacity="0.1"
         rx="71"
       ></motion.rect>

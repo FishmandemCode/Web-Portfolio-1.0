@@ -19,7 +19,7 @@ const Container = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 18vh;
+  margin-top: 16vh;
 
   @media (min-width: 0px) and (max-width: 600px) {
     min-height: 60%;
@@ -34,8 +34,12 @@ const Intro1 = styled(motion.div)`
   justify-content: flex-start;
   align-items: center;
   padding-left: 1vw;
-
   
+  @media (min-aspect-ratio: 2/1) {
+    height: 2.5vw;
+    font-size: 2.5vw;
+  }
+
   @media (min-width: 0px) and (max-width: 600px) {
     height: 5.5vw;
     font-size: 5.5vw;
@@ -52,6 +56,11 @@ const Intro2 = styled(motion.div)`
   align-items: center;
   padding-left: 1vw;
 
+  @media (min-aspect-ratio: 2/1) {
+    height: 2.5vw;
+    font-size: 2.5vw;
+  }
+
   
   @media (min-width: 0px) and (max-width: 600px) {
     height: 5.5vw;
@@ -66,6 +75,11 @@ const MidText = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (min-aspect-ratio: 2/1) {
+    height: 8.5vw;
+    font-size: 10vw;
+  }
+
 
 `;
 const SubText = styled(motion.div)`
@@ -76,7 +90,11 @@ const SubText = styled(motion.div)`
   justify-content: flex-end;
   align-items: center;
   margin-left: -0.2vw;
-  
+  @media (min-aspect-ratio: 2/1) {
+    height: 2.5vw;
+    font-size: 2.5vw;
+  }
+
   @media (min-width: 0px) and (max-width: 600px) {
     height: 5.5vw;
     font-size: 5.5vw;
@@ -94,6 +112,10 @@ const Footer = styled(motion.div)`
   align-items: center;
   font-family: "Neue-Montreal-light";
   gap: 2vw;
+  @media (min-aspect-ratio: 2/1) {
+    width: 92vw;
+  }
+
 
   @media (min-width: 0px) and (max-width: 1400px) {
     justify-content: center;
@@ -109,6 +131,12 @@ const Link = styled(motion.a)`
 
   &:hover {
     color: #4472C4; /* Add the hover color */
+  }
+  @media (min-aspect-ratio: 2/1) {
+    height: 1.8vw;
+    font-size: 1.8vw;
+    padding-top: 2vw;
+    padding-bottom: 5vw;
   }
 
   @media (min-width: 0px) and (max-width: 1400px) {
@@ -181,7 +209,7 @@ const Hero = () => {
           animate="visible"
           transition={{ type: "linear", stiffness: 70, delay: 0.8 }}
         >
-          ENGINEER
+          DEVELOPER
         </SubText>
       </Container>
 
@@ -194,7 +222,7 @@ const Hero = () => {
           initial="hidden"
           animate="visible"
           transition={{ type: "spring", stiffness: 60, delay: 0.6 }}
-          href="https://github.com/FishmandemCode"
+          href="https://resume.io/r/sZ2Qrdb8h"
           target="_blank"
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}

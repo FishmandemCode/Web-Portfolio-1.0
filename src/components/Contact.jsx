@@ -18,6 +18,7 @@ const Section = styled.div`
   flex-direction: column;
   align-items: center;
   z-index: 1;
+  overflow: hidden;
 
   .alert{
     font-family: "Neue-Montreal-light";
@@ -81,6 +82,10 @@ const Footer = styled(motion.div)`
   font-family: "Neue-Montreal-light";
   gap: 2vw;
 
+  @media (min-aspect-ratio: 2/1) {
+    width: 92vw;
+  }
+
   @media (min-width: 0px) and (max-width: 1400px) {
     justify-content: center;
     align-items: center;
@@ -100,7 +105,13 @@ const Link = styled(motion.a)`
   color: white;
 
   &:hover {
-    color: #4472C4;
+    color: #4472C4; /* Add the hover color */
+  }
+  @media (min-aspect-ratio: 2/1) {
+    height: 1.8vw;
+    font-size: 1.8vw;
+    padding-top: 2vw;
+    padding-bottom: 5vw;
   }
   @media (min-width: 0px) and (max-width: 1400px) {
     height: 3.5vw;
@@ -429,7 +440,7 @@ const Contact = () => {
           from_name: Form.name,
           to_name: "Bilal",
           from_email: Form.email,
-          to_email: "", //your email address from emailjs
+          to_email: "", //Email from emailjs
           message: Form.message,
         },
         "" //API Key from emailjs
@@ -745,7 +756,7 @@ const Contact = () => {
           whileInView="visible"
           viewport={{ once: true }}
           transition={{ type: "spring", stiffness: 60, delay: 0.2 }}
-          href="https://github.com/FishmandemCode"
+          href="https://resume.io/r/sZ2Qrdb8h"
           target="_blank"
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}

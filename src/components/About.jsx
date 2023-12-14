@@ -19,10 +19,23 @@ const Section = styled.div`
   margin: 0;
   padding: 0;
   display: flex;
+  overflow: hidden;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
   z-index: 1;
+  @media screen and (max-width: 1400px) {
+    overflow: auto;
+  }
+  @media (orientation: landscape) and (max-width: 1400px){
+    overflow: auto;
+  }
+  @media screen and (max-width: 800px) {
+    overflow: auto;
+  }
+  @media (orientation: landscape) and (max-width: 800px){
+    overflow: auto;
+  }
 `;
 const Container = styled.div`
   margin-top: 7vw;
@@ -32,6 +45,9 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  @media (min-aspect-ratio: 2/1) {
+    height: 62vh;
+  }
   @media screen and (max-width: 1400px) {
     margin-top: 7vh;
     width: 92vw;
@@ -84,6 +100,11 @@ const Card_box = styled.div`
   flex-direction: column;
   align-items: center;
 
+  @media (min-aspect-ratio: 2/1) {
+    padding-top: 0vw;
+  }
+
+
 `;
 const Mobile = styled(motion.div)`
   @media screen and (max-width: 1400px) {
@@ -119,10 +140,10 @@ const SepTitle = styled(motion.div)`
 `;
 const CardBase = styled(motion.div)`
   &.card{
-    height: 22vw;
     width: 90%;
+    height: 22vw;
     background: rgba(116, 115, 115, 0.2);
-    border-radius: 5px;
+    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10.1px);
     -webkit-backdrop-filter: blur(10.1px);
@@ -130,6 +151,9 @@ const CardBase = styled(motion.div)`
     flex-direction: column;
     align-items: center;
     z-index: 1;
+    @media (min-aspect-ratio: 2/1) {
+      height: 18vw;
+    }
   }
 /* 
   &.card::before{
@@ -158,7 +182,7 @@ const Card = styled(CardBase)`
 `;
 const Image = styled.div`
   &.image{
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.02);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10.1px);
@@ -171,6 +195,9 @@ const Image = styled.div`
     margin-top: 2vw;
     width: 19.5vw;
     height: 15vw;
+    @media (min-aspect-ratio: 2/1) {
+      height: 12vw;
+    }
   }
 
   &.image-open{
@@ -184,6 +211,9 @@ const Text = styled.span`
     font-size: 2vw;
     text-align: left;
     padding-left: 0.3vw;
+    @media (min-aspect-ratio: 2/1) {
+      margin-top: 0.4vw;
+    }
   }
 
   &.text-open{
@@ -199,18 +229,18 @@ const Text = styled.span`
 `;
 const OContainer = styled(motion.div)`
   width: 100%;
-  height: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
 `;
 const SubContainer = styled(motion.div)`
-  height: 90%;
+  height: 95%;
   width: 95%;
   display: flex;
 `;
 const Subtext = styled(motion.div)`
-  flex: 1.5;
-  font-size: 1.3vw;
+  flex: 1.2;
+  font-size: 1.2vw;
   opacity: 1;
   overflow: none;
   @media screen and (min-width: 1400px){
@@ -229,11 +259,16 @@ const Subtext = styled(motion.div)`
 
 `;
 const DP = styled(motion.div)`
-  flex: 1; 
+  height: 90%;
+  width: 40%;
   display: flex;
+  justify-content: center;
+  @media (min-aspect-ratio: 2/1) {
+    height: 100%;
+    }
 `;
 const IMG = styled(motion.img)`
-  height: 27vw;
+  object-fit: cover;
 `;
 const C = styled.span`
   color: #4472C4;
@@ -254,6 +289,7 @@ const ExpContainer = styled(motion.div)`
 `;
 const VTimeline = styled(motion(VerticalTimeline))`
   height: 90%;
+  font-family: "Neue-Montreal-light";
   @media screen and (min-width: 1400px){
     overflow-y: auto; /* Change from scroll to auto */
     overflow-x: hidden;
@@ -263,7 +299,7 @@ const VTimeline = styled(motion(VerticalTimeline))`
 
   &.vertical-timeline::before {
     border-color: white;
-    height: 200%;
+    height: 285%;
     @media screen and (max-width: 1400px){
       display: none;
     }
@@ -279,7 +315,24 @@ const VTimeline = styled(motion(VerticalTimeline))`
     background-color: #4472C4;
   }
 `;
+
+const ICON = styled(motion.div)`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+const IconIMG = styled(motion.img)`
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+
+`
 const VTimelineElement = styled(motion(VerticalTimelineElement))`
+  .vertical-timeline-element-icon.bounce-in{
+    display: flex;
+  }
   @media screen and (max-width: 1400px) {
     .vertical-timeline-element-icon.bounce-in{
       display: none;
@@ -309,8 +362,9 @@ const VTimelineElement = styled(motion(VerticalTimelineElement))`
     color:#f1eeee;
     font-size: medium;
   }
-
 `;
+
+
 const TimelineContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
@@ -325,7 +379,7 @@ const Title = styled(motion.div)`
 `;
 const Description = styled(motion.div)`
   font-family: "Neue-Montreal-Medium";
-  color: #4472C4;
+  color: #ffffff;
   font-weight: 500;
   font-size: medium;
   margin: 0;
@@ -709,11 +763,21 @@ const Footer = styled(motion.div)`
   align-items: center;
   font-family: "Neue-Montreal-light";
   gap: 2vw;
+  @media (min-aspect-ratio: 2/1) {
+    width: 92vw;
+  }
 
   @media (min-width: 0px) and (max-width: 1400px) {
     justify-content: center;
     align-items: center;
     padding-bottom: 5vw;
+    padding-top: 3vw;
+  }
+  @media (orientation: landscape) and (max-width: 1400px){
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vw;
+    padding-top: 3vw;
   }
 `;
 const Link = styled(motion.a)`
@@ -724,6 +788,13 @@ const Link = styled(motion.a)`
   &:hover {
     color: #4472C4; /* Add the hover color */
   }
+  @media (min-aspect-ratio: 2/1) {
+    height: 1.8vw;
+    font-size: 1.8vw;
+    padding-top: 2vw;
+    padding-bottom: 5vw;
+  }
+
   @media (min-width: 0px) and (max-width: 1400px) {
     height: 3.5vw;
     font-size: 3.5vw;
@@ -734,6 +805,7 @@ const Link = styled(motion.a)`
     font-size: 2.5vw;
   }
 `;
+
 const About = () => {
   const ref = useRef(null);
   const [CursorState, setCursorState] = useState("visible");
@@ -1088,10 +1160,10 @@ const About = () => {
               whileInView="visible"
               viewport={{ once: true }}
               animate={{
-                width: selectedCard === "overview" ? "310%" : "",
-                height: selectedCard === "overview" ? "60vw" : "22vw",
-                marginTop: selectedCard === "overview" ? "-5vw" : "0",
-                marginLeft: selectedCard === "overview" ? "53vw" : "0",
+                width: selectedCard === "overview" ? "80vw" : "",
+                height: selectedCard === "overview" ? "75vh" : "",
+                marginTop: selectedCard === "overview" ? "-20%" : "0",
+                marginLeft: selectedCard === "overview" ? "200%" : "0",
               }}
               transition={{ duration: 0.3, type: "linear" }}
             >
@@ -1201,10 +1273,10 @@ const About = () => {
               whileInView="visible"
               viewport={{ once: true }}
               animate={{
-                width: selectedCard === "expertise" ? "310%" : "",
-                height: selectedCard === "expertise" ? "60vw" : "22vw",
-                marginTop: selectedCard === "expertise" ? "-5vw" : "0",
-                marginLeft: selectedCard === "expertise" ? "0vw" : "0",
+                width: selectedCard === "expertise" ? "80vw" : "",
+                height: selectedCard === "expertise" ? "75vh" : "",
+                marginTop: selectedCard === "expertise" ? "-20%" : "0",
+                marginLeft: selectedCard === "expertise" ? "0%" : "0",
                 zIndex: selectedCard === "expertise" ? "11" : "1",
               }}
               transition={{ duration: 0.3, type: "linear" }}
@@ -1476,10 +1548,10 @@ const About = () => {
               whileInView="visible"
               viewport={{ once: true }}
               animate={{
-                width: selectedCard === "experience" ? "310%" : "",
-                height: selectedCard === "experience" ? "60vw" : "22vw",
-                marginTop: selectedCard === "experience" ? "-5vw" : "0",
-                marginLeft: selectedCard === "experience" ? "-53vw" : "0",
+                width: selectedCard === "experience" ? "80vw" : "",
+                height: selectedCard === "experience" ? "75vh" : "",
+                marginTop: selectedCard === "experience" ? "-20%" : "0",
+                marginLeft: selectedCard === "experience" ? "-200%" : "0",
               }}
               transition={{ duration: 0.3, type: "linear" }}
             >
@@ -1502,6 +1574,12 @@ const About = () => {
                       <VTimelineElement
                         key={experience.company_name}
                         date={experience.date}
+                        iconStyle={{ background: experience.iconBg }}
+                        icon={<ICON>
+                          <IconIMG 
+                          src={experience.icon}
+                          alt={experience.company_name}/>
+                        </ICON>}
                       >
                         <TimelineContainer>
                           <Title>{experience.title}</Title>
@@ -1533,7 +1611,7 @@ const About = () => {
           whileInView="visible"
           viewport={{ once: true }}
           transition={{ type: "spring", stiffness: 60, delay: 0.2 }}
-          href="https://github.com/FishmandemCode"
+          href="https://resume.io/r/sZ2Qrdb8h"
           target="_blank"
           onMouseEnter={textEnter}
           onMouseLeave={textLeave}
