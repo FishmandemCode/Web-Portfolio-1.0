@@ -1,5 +1,6 @@
 # Bilal-WebPortfolio-1.0
 
+Link: https://bilalnasir.net
 My personal web portfolio serves as a showcase of my experience, personal projects, and career journey. This is my inaugural project that I am sharing with the world, hoping to inspire fellow developers.
 
 Key Skills Utilized:
