@@ -31,6 +31,7 @@ const Intro1 = styled(motion.div)`
   height: 4vw;
   font-size: 3.3vw;
   display: flex;
+  color: white;
   justify-content: flex-start;
   align-items: center;
   padding-left: 1vw;
@@ -52,6 +53,7 @@ const Intro2 = styled(motion.div)`
   height: 4vw;
   font-size: 3.3vw;
   display: flex;
+  color: white;
   justify-content: flex-start;
   align-items: center;
   padding-left: 1vw;
@@ -75,6 +77,7 @@ const MidText = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
   @media (min-aspect-ratio: 2/1) {
     height: 8.5vw;
     font-size: 10vw;
@@ -90,6 +93,7 @@ const SubText = styled(motion.div)`
   justify-content: flex-end;
   align-items: center;
   margin-left: -0.2vw;
+  color: white;
   @media (min-aspect-ratio: 2/1) {
     height: 2.5vw;
     font-size: 2.5vw;

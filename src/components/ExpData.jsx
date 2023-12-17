@@ -55,7 +55,7 @@ export const experiences = [
         ],
     },
     {
-        title: "Student",
+        title: "Graduated in Computer Engineering Technology",
         company_name: "Seneca College",
         icon: Seneca,
         iconBg: "#ffffff",

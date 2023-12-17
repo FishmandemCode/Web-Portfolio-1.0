@@ -9,6 +9,7 @@ import EmailSVG from "./CPE/Email";
 
 const Section = styled.div`
   font-family: "Neue-Montreal-light";
+  color: white;
   height: 100vh;
   width: 100vw;
   margin: 0;
@@ -18,7 +19,6 @@ const Section = styled.div`
   flex-direction: column;
   align-items: center;
   z-index: 1;
-  overflow: hidden;
 
   .alert{
     font-family: "Neue-Montreal-light";
@@ -321,6 +321,8 @@ const Input = styled(motion.input)`
   padding-left: 0.4vw;
   @media (min-width: 0px) and (max-width: 1400px) {
     font-size: 2.5vw;
+    color: white;
+
   }
   @media (orientation: landscape) and (max-width: 1400px){
     font-size: 2.5vw;
@@ -328,6 +330,7 @@ const Input = styled(motion.input)`
 `;
 const TextArea = styled(motion.textarea)`
   font-family: "Neue-Montreal-light";
+  color: white;
   font-size: 1vw;
   background: rgba(121, 122, 121, 0.2);
   border: 1px rgba(121, 121, 121, 0.2) solid;
@@ -356,6 +359,7 @@ const Button = styled(motion.button)`
   background: rgba(121, 122, 121, 0.2);
   border: 1px rgba(121, 121, 121, 0.2) solid;
   border-radius: 5px;
+  color: white;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.1px);
   -webkit-backdrop-filter: blur(10.1px);
@@ -434,16 +438,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        "", //Service ID from emailjs
-        "", //Template ID from emailjs
+        "service_u2fgyl9", //Service ID from emailjs
+        "template_vowfcyc", //Template ID from emailjs
         {
           from_name: Form.name,
           to_name: "Bilal",
           from_email: Form.email,
-          to_email: "", //Email from emailjs
+          to_email: "bilalnasir2712work@gmail.com", //Email from emailjs
           message: Form.message,
         },
-        "" //API Key from emailjs
+        "1URQ4AoPhX6ozPGmD" //API Key from emailjs
       )
       .then(
         () => {

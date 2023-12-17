@@ -1,10 +1,10 @@
 import React from "react";
-import { motion } from "framer-motion"
+import { delay, motion } from "framer-motion"
 
 function Icon({ isTextHovered }) {
     const animationVariants = {
       hidden: { opacity: 0 },
-      visible: { opacity: 1, transition: { duration: 1, ease: 'easeInOut', delay: 0.3 } },
+      visible: { opacity: 1, transition: { duration: 1, ease: 'easeInOut', delay: 0.3} },
     };
     const PathVariants = {
         hidden: { pathLength: 0 },
@@ -13,10 +13,10 @@ function Icon({ isTextHovered }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1688"
-      height="813"
+      width="1723"
+      height="857"
       fill="none"
-      viewBox="0 0 1688 813"
+      viewBox="0 0 1723 857"
     >
       <motion.rect
         initial="hidden"
@@ -24,167 +24,259 @@ function Icon({ isTextHovered }) {
         variants={animationVariants}
         width="268"
         height="49"
-        fill="#ffffff"
+        x="1.998"
+        fill="#D9D9D9"
         fillOpacity="0.1"
         rx="24.5"
       ></motion.rect>
-      <motion.path 
+      <motion.path
         initial="hidden"
         animate="visible"
         variants={PathVariants}
-        stroke="#fff" d="M0 76.5L516 76.5"></motion.path>
+        stroke="#fff" d="M1.998 76.5L517.998 76.5"></motion.path>
       <motion.rect
         initial="hidden"
         animate="visible"
         variants={animationVariants}
-        width="290.722"
-        height="237.593"
-        y="131"
-        fill="#ffffff"
+        width="282.396"
+        height="170.649"
+        y="327.45"
+        fill="#fff"
         fillOpacity="0.1"
-        rx="71"
+        rx="16"
       ></motion.rect>
       <motion.rect
         initial="hidden"
         animate="visible"
         variants={animationVariants}
-        width="416.857"
-        height="319.25"
-        x="311.05"
-        y="131"
-        fill="#ffffff"
+        width="277.883"
+        height="170.649"
+        x="1444.98"
+        y="327.45"
+        fill="#fff"
         fillOpacity="0.1"
-        rx="71"
+        rx="16"
       ></motion.rect>
       <motion.rect
         initial="hidden"
         animate="visible"
         variants={animationVariants}
-        width="137.891"
-        height="247.26"
-        y="387.927"
-        fill="#ffffff"
+        width="282.355"
+        height="170.649"
+        x="1153.76"
+        y="327.45"
+        fill="#fff"
         fillOpacity="0.1"
-        rx="68.945"
+        rx="16"
       ></motion.rect>
       <motion.rect
         initial="hidden"
         animate="visible"
         variants={animationVariants}
-        width="137.891"
-        height="247.26"
-        x="155.525"
-        y="387.927"
-        fill="#ffffff"
+        width="276.795"
+        height="170.649"
+        x="868.098"
+        y="327.45"
+        fill="#fff"
         fillOpacity="0.1"
-        rx="68.945"
+        rx="16"
       ></motion.rect>
       <motion.rect
         initial="hidden"
         animate="visible"
         variants={animationVariants}
-        width="303.458"
-        height="344.18"
-        x="311.051"
-        y="468.819"
-        fill="#ffffff"
+        width="277.883"
+        height="170.649"
+        x="581.351"
+        y="327.45"
+        fill="#fff"
         fillOpacity="0.1"
-        rx="71"
+        rx="16"
       ></motion.rect>
       <motion.rect
         initial="hidden"
         animate="visible"
         variants={animationVariants}
-        width="303.458"
-        height="319.25"
-        x="748.235"
-        y="131"
-        fill="#ffffff"
+        width="281.227"
+        height="170.649"
+        x="291.26"
+        y="327.45"
+        fill="#fff"
         fillOpacity="0.1"
-        rx="71"
+        rx="16"
       ></motion.rect>
       <motion.rect
         initial="hidden"
         animate="visible"
         variants={animationVariants}
-        width="215.286"
-        height="200.453"
-        x="1072.02"
-        y="131"
-        fill="#ffffff"
+        width="282.395"
+        height="170.649"
+        y="686.35"
+        fill="#fff"
         fillOpacity="0.1"
-        rx="71"
+        rx="16"
       ></motion.rect>
       <motion.rect
         initial="hidden"
         animate="visible"
         variants={animationVariants}
-        width="351.463"
-        height="200.453"
-        x="1072.02"
-        y="350.023"
-        fill="#ffffff"
+        width="277.882"
+        height="170.649"
+        x="1444.98"
+        y="686.35"
+        fill="#fff"
         fillOpacity="0.1"
-        rx="71"
+        rx="16"
       ></motion.rect>
       <motion.rect
         initial="hidden"
         animate="visible"
         variants={animationVariants}
-        width="244.187"
-        height="200.453"
-        x="1443.81"
-        y="350.023"
-        fill="#ffffff"
+        width="282.355"
+        height="170.649"
+        x="1153.76"
+        y="686.35"
+        fill="#fff"
         fillOpacity="0.1"
-        rx="71"
+        rx="16"
       ></motion.rect>
       <motion.rect
         initial="hidden"
         animate="visible"
         variants={animationVariants}
-        width="379.139"
-        height="200.453"
-        x="1308.86"
-        y="131"
-        fill="#ffffff"
+        width="276.795"
+        height="170.649"
+        x="868.098"
+        y="686.35"
+        fill="#fff"
         fillOpacity="0.1"
-        rx="71"
+        rx="16"
       ></motion.rect>
       <motion.rect
         initial="hidden"
         animate="visible"
         variants={animationVariants}
-        width="615.978"
-        height="243.953"
-        x="1072.02"
-        y="569.047"
-        fill="#ffffff"
+        width="277.882"
+        height="170.649"
+        x="581.351"
+        y="686.35"
+        fill="#fff"
         fillOpacity="0.1"
-        rx="71"
+        rx="16"
       ></motion.rect>
       <motion.rect
         initial="hidden"
         animate="visible"
         variants={animationVariants}
-        width="416.857"
-        height="344.18"
-        x="634.837"
-        y="468.819"
-        fill="#ffffff"
+        width="281.227"
+        height="170.649"
+        x="291.26"
+        y="686.35"
+        fill="#fff"
         fillOpacity="0.1"
-        rx="71"
+        rx="16"
       ></motion.rect>
       <motion.rect
         initial="hidden"
         animate="visible"
         variants={animationVariants}
-        width="290.722"
-        height="158.48"
-        y="654.52"
-        fill="#ffffff"
+        width="239.366"
+        height="170.649"
+        y="506.899"
+        fill="#fff"
         fillOpacity="0.1"
-        rx="71"
+        rx="16"
+      ></motion.rect>
+      <motion.path
+        initial="hidden"
+        animate="visible"
+        variants={animationVariants}
+        fill="#fff"
+        fillOpacity="0.1"
+        d="M1483.49 522.899c0-8.836 7.17-16 16-16h207.37c8.84 0 16 7.164 16 16v138.65c0 8.836-7.16 16-16 16h-207.37c-8.83 0-16-7.164-16-16v-138.65z"
+      ></motion.path>
+      <motion.rect
+        initial="hidden"
+        animate="visible"
+        variants={animationVariants}
+        width="239.366"
+        height="170.649"
+        x="1236.25"
+        y="506.899"
+        fill="#fff"
+        fillOpacity="0.1"
+        rx="16"
+      ></motion.rect>
+      <motion.path
+        initial="hidden"
+        animate="visible"
+        variants={animationVariants}
+        fill="#fff"
+        fillOpacity="0.1"
+        d="M988.996 522.899c0-8.836 7.164-16 16.004-16h207.36c8.84 0 16 7.164 16 16v138.65c0 8.836-7.16 16-16 16H1005c-8.84 0-16.004-7.164-16.004-16v-138.65zM741.747 522.899c0-8.836 7.164-16 16-16h207.366c8.836 0 16 7.164 16 16v138.65c0 8.836-7.164 16-16 16H757.747c-8.836 0-16-7.164-16-16v-138.65zM494.498 522.899c0-8.836 7.163-16 16-16h207.366c8.836 0 16 7.164 16 16v138.65c0 8.836-7.164 16-16 16H510.498c-8.837 0-16-7.164-16-16v-138.65z"
+      ></motion.path>
+      <motion.rect
+        initial="hidden"
+        animate="visible"
+        variants={animationVariants}
+        width="239.366"
+        height="170.649"
+        x="247.249"
+        y="506.899"
+        fill="#fff"
+        fillOpacity="0.1"
+        rx="16"
+      ></motion.rect>
+      <motion.rect
+        initial="hidden"
+        animate="visible"
+        variants={animationVariants}
+        width="239.366"
+        height="170.649"
+        y="148"
+        fill="#fff"
+        fillOpacity="0.1"
+        rx="16"
+      ></motion.rect>
+      <motion.path
+        initial="hidden"
+        animate="visible"
+        variants={animationVariants}
+        fill="#fff"
+        fillOpacity="0.1"
+        d="M1483.49 164c0-8.837 7.17-16 16-16h207.37c8.84 0 16 7.163 16 16v138.649c0 8.837-7.16 16-16 16h-207.37c-8.83 0-16-7.163-16-16V164z"
+      ></motion.path>
+      <motion.rect
+        initial="hidden"
+        animate="visible"
+        variants={animationVariants}
+        width="239.366"
+        height="170.649"
+        x="1236.24"
+        y="148"
+        fill="#fff"
+        fillOpacity="0.1"
+        rx="16"
+      ></motion.rect>
+      <motion.path
+        initial="hidden"
+        animate="visible"
+        variants={animationVariants}
+        fill="#fff"
+        fillOpacity="0.1"
+        d="M988.996 164c0-8.837 7.163-16 16.004-16h207.36c8.84 0 16 7.163 16 16v138.649c0 8.837-7.16 16-16 16H1005c-8.841 0-16.004-7.163-16.004-16V164zM741.747 164c0-8.837 7.164-16 16-16h207.366c8.836 0 16 7.163 16 16v138.649c0 8.837-7.164 16-16 16H757.747c-8.836 0-16-7.163-16-16V164zM494.498 164c0-8.837 7.163-16 16-16h207.366c8.836 0 16 7.163 16 16v138.649c0 8.837-7.164 16-16 16H510.498c-8.837 0-16-7.163-16-16V164z"
+      ></motion.path>
+      <motion.rect
+        initial="hidden"
+        animate="visible"
+        variants={animationVariants}
+        width="239.366"
+        height="170.649"
+        x="247.249"
+        y="148"
+        fill="#fff"
+        fillOpacity="0.1"
+        rx="16"
       ></motion.rect>
     </svg>
   );

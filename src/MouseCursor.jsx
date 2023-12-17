@@ -43,10 +43,9 @@ const MouseCursor = ({ MouseVarient, CursorState }) => {
   };
 
   const moveMouse = (e) => {
-    requestAnimationFrame(() => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    });
+    setMousePosition({ x: e.clientX, y: e.clientY });
   };
+  
 
   useEffect(() => {
     setMousePosition({ x: window.innerWidth / 2, y: window.innerHeight / 2 });

@@ -5,9 +5,6 @@ import MouseCursor from "../MouseCursor";
 import React, { useState, useRef } from "react";
 
 const Section = styled.nav`
-  *{
-    cursor: none !important;
-  }
   font-family: "Neue-Montreal-light";
   height: 10vh;
   width: 100vw;

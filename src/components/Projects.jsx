@@ -10,11 +10,11 @@ const Section = styled.div`
   margin: 0;
   padding: 0;
   display: flex;
-  overflow: hidden;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
   z-index: 1;
+  color: white;
 `;
 const Container = styled.div`
   margin-top: 7vw;
@@ -49,6 +49,7 @@ const Container = styled.div`
   }
 `;
 const Page_info = styled(motion.div)`
+  color: white;
   font-family: "Neue-Montreal-light";
   width: 95%;
   font-size: 1.6vw;
@@ -458,6 +459,7 @@ const H1 = styled(motion.div)`
   height: fit-content;
   width: 95%;
   font-size: 2.6em;
+  color: white;
 
   @media screen and (max-width: 1400px) and (orientation: landscape) {
     font-size: 5em;
@@ -476,6 +478,7 @@ const Para = styled(motion.div)`
   height: fit-content;
   width: 95%;
   font-size: 1.2em;
+  color: white;
 
   @media screen and (max-width: 1400px) and (orientation: landscape) {
     font-size: 2.7vw;
@@ -494,6 +497,8 @@ const SubT = styled(motion.div)`
   height: fit-content;
   width: 95%;
   font-size: 2.2em;
+  color: white;
+
   @media screen and (max-width: 1400px) and (orientation: landscape) {
     font-size: 4vw;
   }
@@ -984,11 +989,6 @@ const Projects = () => {
                           <li>
                             <span className="ST">Figma:</span> Utilized for
                             design purposes.
-                          </li>
-                          <li>
-                            <span className="ST">Firebase:</span> Integrated
-                            Firebase for efficient data handling and real-time
-                            updates.
                           </li>
                         </motion.ul>
 

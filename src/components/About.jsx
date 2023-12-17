@@ -70,6 +70,7 @@ const Container = styled.div`
   }
 `;
 const Page_info = styled(motion.div)`
+  color: white;
   font-family: "Neue-Montreal-light";
   width: 95%;
   font-size: 1.6vw;
@@ -113,9 +114,10 @@ const Mobile = styled(motion.div)`
     width: 92vw;
 
     &.Scroller{
-      width: 100vw;
+      width: 98vw;
       justify-content: center;
       align-items: center;
+      overflow: hidden;
     }
 
     &.ExpContent{
@@ -239,6 +241,7 @@ const SubContainer = styled(motion.div)`
   display: flex;
 `;
 const Subtext = styled(motion.div)`
+  color: white;
   flex: 1.2;
   font-size: 1.2vw;
   opacity: 1;
@@ -349,6 +352,7 @@ const VTimelineElement = styled(motion(VerticalTimelineElement))`
   .vertical-timeline-element-content {
     border-radius: 0px;
     border-bottom: 1px;
+    color: white;
     background: rgba(240, 240, 240, 0.1);
     opacity: 1;
     border-radius: 16px;
@@ -363,14 +367,13 @@ const VTimelineElement = styled(motion(VerticalTimelineElement))`
     font-size: medium;
   }
 `;
-
-
 const TimelineContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   width: 100%;
+  color: white;
 `;
 const Title = styled(motion.div)`
   color: #fefdfdcc;
@@ -409,352 +412,82 @@ const Bento_Container = styled(motion.div)`
     width: 200vw;
   }
 `;
+
+const MBentoContainer = styled(motion.div)`
+  height: 60vh;
+  width: 150vw;
+  gap: 2vw;
+  margin-top: 3vw;
+  @media screen and (orientation: landscape) and (max-width: 1400px){
+    height: 100vh;
+    width: 50vw;
+  }
+`;
+
+const MBento = styled(motion.div)`
+  width: 250vw;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vw;
+  @media screen and (orientation: landscape) and (max-width: 1400px){
+    width: 200vw;
+    height: 95%;
+  }
+`;
+
 const Bento = styled(motion.div)`
   height: 90%;
   width: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.8vw;
-`;
-const C1 = styled(motion.div)`
-  width: 25%;
-  height: 100%;
-  display: flex;
+  gap: 0.3vw;
   flex-direction: column;
-  gap: 0.8vw;
+  @media screen and (max-width: 1400px) {
+    gap: 2vw;
+  }
+  @media screen and (max-width: 1400px) and (orientation: landscape) {
+    gap: 1vw;
+  }
 `;
-const C2 = styled(motion.div)`
-  width: 40%;
-  height: 100%;
+
+
+const Clum = styled(motion.div)`
   display: flex;
-  flex-direction: column;
-  gap: 0.8vw;
-`;
-const C3 = styled(motion.div)`
-  width: 35%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8vw;
-`;
-const C1R1 = styled(motion.div)`
-  width: 100%;
-  height: 37%;
-`;
-const C1R2 = styled(motion.div)`
-  width: 100%;
-  height: 38%;
-  display: flex;
-  gap: 0.8vw;
-`;
-const C1R3 = styled(motion.div)`
-  width: 100%;
-  height: 25%;
-`;
-const C2R1 = styled(motion.div)`
-  width: 100%;
-  height: 52%;
-  display: flex;
-  gap: 0.8vw;
-`;
-const C2R2 = styled(motion.div)`
-  width: 100%;
-  height: 48%;
-  display: flex;
-  gap: 0.8vw;
-`;
-const C3R1 = styled(motion.div)`
-  width: 100%;
-  height: 30%;
-  display: flex;
-  gap: 0.8vw;
-`;
-const C3R2 = styled(motion.div)`
-  width: 100%;
-  height: 33%;
-  display: flex;
-  gap: 0.8vw;
-`;
-const C3R3 = styled(motion.div)`
-  width: 100%;
-  height: 37%;
-  display: flex;
-  gap: 0.8vw;
-`;
-const Item1 = styled(motion.div)`
-  background: rgba(240, 240, 240, 0.1);
-  opacity: 1;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.1px);
-  -webkit-backdrop-filter: blur(10.1px);
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  gap: 0.3vw;
+  @media screen and (max-width: 1400px) {
+    gap: 2vw;
+  }
+  @media screen and (max-width: 1400px) and (orientation: landscape) {
+    gap: 1vw;
+  }
+
+`
+const Item = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2vw;
-  @media screen and (max-width: 1400px) {
-    font-size: 6vw;
-  }
-  @media screen and (max-width: 1400px) and (orientation: landscape) {
-    font-size: 5vw;
-  }
-`;
-const Item2 = styled(motion.div)`
-  background: rgba(240, 240, 240, 0.1);
-  opacity: 1;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.1px);
-  -webkit-backdrop-filter: blur(10.1px);
-  width: 55%;
-  height: 100%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2vw;
-  @media screen and (max-width: 1400px) {
-    font-size: 6vw;
-  }
-  @media screen and (max-width: 1400px) and (orientation: landscape) {
-    font-size: 5vw;
-  }
-`;
-const Item3 = styled(motion.div)`
-  background: rgba(240, 240, 240, 0.1);
-  opacity: 1;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.1px);
-  -webkit-backdrop-filter: blur(10.1px);
-  width: 45%;
-  height: 100%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2vw;
-  @media screen and (max-width: 1400px) {
-    font-size: 6vw;
-  }
-  @media screen and (max-width: 1400px) and (orientation: landscape) {
-    font-size: 5vw;
-  }
-`;
-const Item4 = styled(motion.div)`
-  background: rgba(240, 240, 240, 0.1);
-  opacity: 1;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.1px);
-  -webkit-backdrop-filter: blur(10.1px);
   width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2vw;
-  @media screen and (max-width: 1400px) {
-    font-size: 6vw;
-  }
-  @media screen and (max-width: 1400px) and (orientation: landscape) {
-    font-size: 5vw;
-  }
-`;
-const Item5 = styled(motion.div)`
-  background: rgba(240, 240, 240, 0.1);
-  opacity: 1;
-  border-radius: 16px;
+  font-size: 1.4vw;
+  background: rgba(121, 122, 121, 0.1);
+  border: 1px rgba(121, 121, 121, 0.2) solid;
+  border-radius: 5px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.1px);
   -webkit-backdrop-filter: blur(10.1px);
-  width: 60%;
-  height: 100%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2vw;
   @media screen and (max-width: 1400px) {
     font-size: 6vw;
   }
   @media screen and (max-width: 1400px) and (orientation: landscape) {
     font-size: 5vw;
   }
-`;
-const Item6 = styled(motion.div)`
-  background: rgba(240, 240, 240, 0.1);
-  opacity: 1;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.1px);
-  -webkit-backdrop-filter: blur(10.1px);
-  width: 40%;
-  height: 100%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2vw;
-  @media screen and (max-width: 1400px) {
-    font-size: 6vw;
-  }
-  @media screen and (max-width: 1400px) and (orientation: landscape) {
-    font-size: 5vw;
-  }
-`;
-const Item7 = styled(motion.div)`
-  background: rgba(240, 240, 240, 0.1);
-  opacity: 1;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.1px);
-  -webkit-backdrop-filter: blur(10.1px);
-  width: 40%;
-  height: 100%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2vw;
-  @media screen and (max-width: 1400px) {
-    font-size: 6vw;
-  }
-  @media screen and (max-width: 1400px) and (orientation: landscape) {
-    font-size: 5vw;
-  }
-`;
-const Item8 = styled(motion.div)`
-  background: rgba(240, 240, 240, 0.1);
-  opacity: 1;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.1px);
-  -webkit-backdrop-filter: blur(10.1px);
-  width: 60%;
-  height: 100%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2vw;
-  @media screen and (max-width: 1400px) {
-    font-size: 6vw;
-  }
-  @media screen and (max-width: 1400px) and (orientation: landscape) {
-    font-size: 5vw;
-  }
-`;
-const Item9 = styled(motion.div)`
-  background: rgba(240, 240, 240, 0.1);
-  opacity: 1;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.1px);
-  -webkit-backdrop-filter: blur(10.1px);
-  width: 35%;
-  height: 100%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2vw;
-  @media screen and (max-width: 1400px) {
-    font-size: 6vw;
-  }
-  @media screen and (max-width: 1400px) and (orientation: landscape) {
-    font-size: 5vw;
-  }
-`;
-const Item10 = styled(motion.div)`
-  background: rgba(240, 240, 240, 0.1);
-  opacity: 1;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.1px);
-  -webkit-backdrop-filter: blur(10.1px);
-  width: 65%;
-  height: 100%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2vw;
-  @media screen and (max-width: 1400px) {
-    font-size: 6vw;
-  }
-  @media screen and (max-width: 1400px) and (orientation: landscape) {
-    font-size: 5vw;
-  }
-`;
-const Item11 = styled(motion.div)`
-  background: rgba(240, 240, 240, 0.1);
-  opacity: 1;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.1px);
-  -webkit-backdrop-filter: blur(10.1px);
-  width: 60%;
-  height: 100%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2vw;
-  @media screen and (max-width: 1400px) {
-    font-size: 6vw;
-  }
-  @media screen and (max-width: 1400px) and (orientation: landscape) {
-    font-size: 5vw;
-  }
-`;
-const Item12 = styled(motion.div)`
-  background: rgba(240, 240, 240, 0.1);
-  opacity: 1;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.1px);
-  -webkit-backdrop-filter: blur(10.1px);
-  width: 40%;
-  height: 100%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2vw;
-  @media screen and (max-width: 1400px) {
-    font-size: 6vw;
-  }
-  @media screen and (max-width: 1400px) and (orientation: landscape) {
-    font-size: 5vw;
-  }
-`;
-const Item13 = styled(motion.div)`
-  background: rgba(240, 240, 240, 0.1);
-  opacity: 1;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.1px);
-  -webkit-backdrop-filter: blur(10.1px);
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2vw;
-  @media screen and (max-width: 1400px) {
-    font-size: 6vw;
-  }
-  @media screen and (max-width: 1400px) and (orientation: landscape) {
-    font-size: 5vw;
-  }
-`;
+`
+
 const Footer = styled(motion.div)`
   height: 10vh;
   width: 95vw;
@@ -926,188 +659,297 @@ const About = () => {
           >
             Expertise.
           </SepTitle>
-          <Bento_Container drag="x" dragConstraints={ref}>
-            <Bento>
-              <C1>
-                <C1R1>
-                  <Item1
-                    variants={{
-                      hidden: { opacity: 0 },
-                      visible: { opacity: 1 },
-                    }}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{ type: "spring", stiffness: 40, delay: 0.2 }}
-                  >
-                    Python
-                  </Item1>
-                </C1R1>
-                <C1R2>
-                  <Item2
-                    variants={{
-                      hidden: { opacity: 0 },
-                      visible: { opacity: 1 },
-                    }}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{ type: "spring", stiffness: 40, delay: 0.2 }}
-                  >
-                    Java
-                  </Item2>
-                  <Item3
-                    variants={{
-                      hidden: { opacity: 0 },
-                      visible: { opacity: 1 },
-                    }}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{ type: "spring", stiffness: 40, delay: 0.2 }}
-                  >
-                    C#/.Net
-                  </Item3>
-                </C1R2>
-                <C1R3>
-                  <Item4
-                    variants={{
-                      hidden: { opacity: 0 },
-                      visible: { opacity: 1 },
-                    }}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{ type: "spring", stiffness: 40, delay: 0.2 }}
-                  >
-                    MySQL
-                  </Item4>
-                </C1R3>
-              </C1>
-              <C2>
-                <C2R1>
-                  <Item5
-                    variants={{
-                      hidden: { opacity: 0 },
-                      visible: { opacity: 1 },
-                    }}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{ type: "spring", stiffness: 40, delay: 0.2 }}
-                  >
-                    HTML
-                  </Item5>
-                  <Item6
-                    variants={{
-                      hidden: { opacity: 0 },
-                      visible: { opacity: 1 },
-                    }}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{ type: "spring", stiffness: 40, delay: 0.2 }}
-                  >
-                    CSS
-                  </Item6>
-                </C2R1>
-                <C2R2>
-                  <Item7
-                    variants={{
-                      hidden: { opacity: 0 },
-                      visible: { opacity: 1 },
-                    }}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{ type: "spring", stiffness: 40, delay: 0.2 }}
-                  >
-                    JavaScript
-                  </Item7>
-                  <Item8
-                    variants={{
-                      hidden: { opacity: 0 },
-                      visible: { opacity: 1 },
-                    }}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{ type: "spring", stiffness: 40, delay: 0.2 }}
-                  >
-                    ReactJS
-                  </Item8>
-                </C2R2>
-              </C2>
-              <C3>
-                <C3R1>
-                  <Item9
-                    variants={{
-                      hidden: { opacity: 0 },
-                      visible: { opacity: 1 },
-                    }}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{ type: "spring", stiffness: 40, delay: 0.2 }}
-                  >
-                    Figma
-                  </Item9>
-                  <Item10
-                    variants={{
-                      hidden: { opacity: 0 },
-                      visible: { opacity: 1 },
-                    }}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{ type: "spring", stiffness: 40, delay: 0.2 }}
-                  >
-                    Styled-Component
-                  </Item10>
-                </C3R1>
-                <C3R2>
-                  <Item11
-                    variants={{
-                      hidden: { opacity: 0 },
-                      visible: { opacity: 1 },
-                    }}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{ type: "spring", stiffness: 40, delay: 0.2 }}
-                  >
-                    Framer-Motion
-                  </Item11>
-                  <Item12
-                    variants={{
-                      hidden: { opacity: 0 },
-                      visible: { opacity: 1 },
-                    }}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{ type: "spring", stiffness: 40, delay: 0.2 }}
-                  >
-                    Git
-                  </Item12>
-                </C3R2>
-                <C3R3>
-                  <Item13
-                    variants={{
-                      hidden: { opacity: 0 },
-                      visible: { opacity: 1 },
-                    }}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{ type: "spring", stiffness: 40, delay: 0.2 }}
-                  >
-                    Linux
-                  </Item13>
-                </C3R3>
-              </C3>
-            </Bento>
-          </Bento_Container>
+            <MBentoContainer  drag="x" dragConstraints={ref}>
+              <MBento>
+                    <Clum>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.2,
+                          }}
+                        >Python</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.3,
+                          }}
+                          >Java</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.4,
+                          }}
+                          >C</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.5,
+                          }}
+                          >C#</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.6,
+                          }}
+                          >HTML</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.7,
+                          }}
+                          >CSS</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.8,
+                          }}
+                          >JavaScript</Item>
+
+                      </Clum>
+                      <Clum>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.3,
+                          }}
+                          >Reactjs</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.3,
+                          }}
+                          >Vite</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.4,
+                          }}
+                          >Framer-Motion</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.5,
+                          }}
+                          >Flask</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.6,
+                          }}
+                          >Pandas</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.7,
+                          }}
+                          >mySQL</Item>
+                      </Clum>
+                      <Clum>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.4,
+                          }}
+                          >Linux</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.5,
+                          }}
+                          >Window</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.6,
+                          }}
+                          >IOS</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.7,
+                          }}>Android</Item>
+                          
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.8,
+                          }}
+                          >Raspian</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.9,
+                          }}
+                          >Git</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 1,
+                          }}
+                          >Figma</Item>
+                      </Clum>
+              </MBento>
+            </MBentoContainer>
         </Mobile>
         <Mobile className="ExpContent">
           <SepTitle
@@ -1259,7 +1101,7 @@ const About = () => {
             </Card>
           </Card_box>
 
-          <Card_box>
+          <Card_box className="Scroller" ref={ref}>
             <Card
               className={selectedCard === "expertise" ? "opened-card" : "card"}
               onClick={() => handleCardClick("expertise")}
@@ -1297,236 +1139,380 @@ const About = () => {
                 <AnimatePresence>
                   <Bento_Container>
                     <Bento>
-                      <C1>
-                        <C1R1>
-                          <Item1
-                            variants={{
-                              hidden: { opacity: 0 },
-                              visible: { opacity: 1 },
-                            }}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            transition={{
-                              type: "spring",
-                              stiffness: 40,
-                              delay: 0.2,
-                            }}
-                          >
-                            Python
-                          </Item1>
-                        </C1R1>
-                        <C1R2>
-                          <Item2
-                            variants={{
-                              hidden: { opacity: 0 },
-                              visible: { opacity: 1 },
-                            }}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            transition={{
-                              type: "spring",
-                              stiffness: 40,
-                              delay: 0.4,
-                            }}
-                          >
-                            C#/.Net
-                          </Item2>
-                          <Item3
-                            variants={{
-                              hidden: { opacity: 0 },
-                              visible: { opacity: 1 },
-                            }}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            transition={{
-                              type: "spring",
-                              stiffness: 40,
-                              delay: 0.6,
-                            }}
-                          >
-                            Java
-                          </Item3>
-                        </C1R2>
-                        <C1R3>
-                          <Item4
-                            variants={{
-                              hidden: { opacity: 0 },
-                              visible: { opacity: 1 },
-                            }}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            transition={{
-                              type: "spring",
-                              stiffness: 40,
-                              delay: 0.8,
-                            }}
-                          >
-                            MySQL
-                          </Item4>
-                        </C1R3>
-                      </C1>
-                      <C2>
-                        <C2R1>
-                          <Item5
-                            variants={{
-                              hidden: { opacity: 0 },
-                              visible: { opacity: 1 },
-                            }}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            transition={{
-                              type: "spring",
-                              stiffness: 40,
-                              delay: 0.6,
-                            }}
-                          >
-                            HTML
-                          </Item5>
-                          <Item6
-                            variants={{
-                              hidden: { opacity: 0 },
-                              visible: { opacity: 1 },
-                            }}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            transition={{
-                              type: "spring",
-                              stiffness: 40,
-                              delay: 0.8,
-                            }}
-                          >
-                            CSS
-                          </Item6>
-                        </C2R1>
-                        <C2R2>
-                          <Item7
-                            variants={{
-                              hidden: { opacity: 0 },
-                              visible: { opacity: 1 },
-                            }}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            transition={{
-                              type: "spring",
-                              stiffness: 40,
-                              delay: 0.7,
-                            }}
-                          >
-                            JavaScript
-                          </Item7>
-                          <Item8
-                            variants={{
-                              hidden: { opacity: 0 },
-                              visible: { opacity: 1 },
-                            }}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            transition={{
-                              type: "spring",
-                              stiffness: 40,
-                              delay: 1,
-                            }}
-                          >
-                            ReactJS
-                          </Item8>
-                        </C2R2>
-                      </C2>
-                      <C3>
-                        <C3R1>
-                          <Item9
-                            variants={{
-                              hidden: { opacity: 0 },
-                              visible: { opacity: 1 },
-                            }}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            transition={{
-                              type: "spring",
-                              stiffness: 40,
-                              delay: 1,
-                            }}
-                          >
-                            Figma
-                          </Item9>
-                          <Item10
-                            variants={{
-                              hidden: { opacity: 0 },
-                              visible: { opacity: 1 },
-                            }}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            transition={{
-                              type: "spring",
-                              stiffness: 40,
-                              delay: 1.2,
-                            }}
-                          >
-                            Styled-Component
-                          </Item10>
-                        </C3R1>
-                        <C3R2>
-                          <Item11
-                            variants={{
-                              hidden: { opacity: 0 },
-                              visible: { opacity: 1 },
-                            }}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            transition={{
-                              type: "spring",
-                              stiffness: 40,
-                              delay: 1.3,
-                            }}
-                          >
-                            Framer-Motion
-                          </Item11>
-                          <Item12
-                            variants={{
-                              hidden: { opacity: 0 },
-                              visible: { opacity: 1 },
-                            }}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            transition={{
-                              type: "spring",
-                              stiffness: 40,
-                              delay: 1.5,
-                            }}
-                          >
-                            Git
-                          </Item12>
-                        </C3R2>
-                        <C3R3>
-                          <Item13
-                            variants={{
-                              hidden: { opacity: 0 },
-                              visible: { opacity: 1 },
-                            }}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            transition={{
-                              type: "spring",
-                              stiffness: 40,
-                              delay: 1.7,
-                            }}
-                          >
-                            Linux
-                          </Item13>
-                        </C3R3>
-                      </C3>
+                      <Clum>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.2,
+                          }}
+                        >Python</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.3,
+                          }}
+                          >Java</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.4,
+                          }}
+                          >C</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.5,
+                          }}
+                          >C#</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.6,
+                          }}
+                          >HTML</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.7,
+                          }}
+                          >CSS</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.8,
+                          }}
+                          >JavaScript</Item>
+
+                      </Clum>
+                      <Clum>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.3,
+                          }}
+                          >Reactjs</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.3,
+                          }}
+                          >Vite</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.4,
+                          }}
+                          >Framer-Motion</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.5,
+                          }}
+                          >Flask</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.6,
+                          }}
+                          >Pandas</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.7,
+                          }}
+                          >mySQL</Item>
+                      </Clum>
+                      <Clum>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.4,
+                          }}
+                          >Linux</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.5,
+                          }}
+                          >Window</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.6,
+                          }}
+                          >IOS</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.7,
+                          }}>Android</Item>
+                          
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.8,
+                          }}
+                          >Raspian</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.9,
+                          }}
+                          >Git</Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 1,
+                          }}
+                          >Figma</Item>
+                      </Clum>
+                      <Clum>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.6,
+                          }}
+                          ></Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.7,
+                          }}
+                          ></Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.8,
+                          }}
+                          ></Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 0.9,
+                          }}
+                          ></Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 1,
+                          }}
+                          ></Item>
+                        <Item
+                          variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                          }}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 40,
+                            delay: 1.1,
+                          }}
+                          ></Item>
+
+                      </Clum>
                     </Bento>
                   </Bento_Container>
                 </AnimatePresence>
