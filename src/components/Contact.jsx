@@ -438,16 +438,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_u2fgyl9", //Service ID from emailjs
-        "template_vowfcyc", //Template ID from emailjs
+        "", //Service ID from emailjs
+        "", //Template ID from emailjs
         {
           from_name: Form.name,
           to_name: "Bilal",
           from_email: Form.email,
-          to_email: "bilalnasir2712work@gmail.com", //Email from emailjs
+          to_email: "", //Email from emailjs
           message: Form.message,
         },
-        "1URQ4AoPhX6ozPGmD" //API Key from emailjs
+        "" //API Key from emailjs
       )
       .then(
         () => {
