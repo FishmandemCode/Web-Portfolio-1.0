@@ -59,7 +59,7 @@ export const experiences = [
         company_name: "Seneca College",
         icon: Seneca,
         iconBg: "#ffffff",
-        date: "May 2021 - April 2023",
+        date: "Jan 2021 - April 2023",
         points: [
             "Network design and management",
             "System administration and maintenance",
