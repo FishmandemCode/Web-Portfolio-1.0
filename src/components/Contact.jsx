@@ -520,19 +520,19 @@ const Contact = () => {
                 <SVGdiv>
                   <ContactSVG />
                 </SVGdiv>
-                Toronto, Canada
+                //Your location
               </Location>
               <PhoneNumber>
                 <SVGdiv className="Phone">
                   <PhoneSVG />
                 </SVGdiv>
-                {"("}437{")"} 256-5536
+                {"("}{")"} //Phone Number
               </PhoneNumber>
               <Email>
                 <SVGdiv className="Email">
                   <EmailSVG />
                 </SVGdiv>
-                Bilalnasir2712@gmail.com
+                //Email Address
               </Email>
             </BilInfo>
           </MUpper>
